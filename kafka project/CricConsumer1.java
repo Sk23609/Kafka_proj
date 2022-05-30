@@ -45,11 +45,13 @@ public class CricConsumer
                 }
               if(counter%11==0)
                 {
+                  counter=0;
                   for(String rec:listp)
                      {
                        pw.println(rec);
                       } 
                  }
+              counter++;
               pw.flush();
               pw.close();
               bw.close ();
